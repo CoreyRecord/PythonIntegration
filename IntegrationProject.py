@@ -134,23 +134,30 @@ def main():
             if cardio_type == "run":
                 miles = float(input("How many miles did you run? "))
                 calories_burned = miles * 170
+                print("You have burned ", format(calories_burned, ".0f"),
+                      " calories.", sep="")
                 break
             elif cardio_type == "walk":
                 miles = float(input("How many miles did you walk? "))
                 calories_burned = miles * 100
+                print("You have burned ", format(calories_burned, ".0f"),
+                      " calories.", sep="")
                 break
             elif cardio_type == "cycle":
                 miles = float(input("How many miles did you cycle? "))
                 calories_burned = miles * 60
+                print("You have burned ", format(calories_burned, ".0f"),
+                      " calories.", sep="")
                 break
+
+                print("You have burned ", format(calories_burned, ".0f"))
+            # " calories.", sep="")
             else:
                 print("Please enter run, walk, or cycle")
-                # cardio = str(input("Did you perform cardio? yes/no "))
-            print("You have burned ", format(calories_burned, ".0f"),
-                      " calories.", sep="")
+            # cardio = str(input("Did you perform cardio? yes/no "))
 
-        if cardio == "no":
-            print("Consider doing cardio to help with your caloric goals.")
+            if cardio == "no":
+                print("Consider doing cardio to help with your caloric goals.")
             break
 
     # run if cardio is no
@@ -187,4 +194,3 @@ def ideal_body_weight_female(height):
 
 
 main()
-
