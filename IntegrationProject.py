@@ -150,7 +150,6 @@ def main():
                       " calories.", sep="")
                 break
 
-                print("You have burned ", format(calories_burned, ".0f"))
             # " calories.", sep="")
             else:
                 print("Please enter run, walk, or cycle")
